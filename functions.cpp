@@ -4,7 +4,7 @@
 #include <vector>
 #include <random>
 #include "time.h"
-
+void CalculateMatchScore(instructor i, Course c, vector <Assignment> & a);
 void instructorInput(vector<instructor>& v)
 {
 	srand(time(NULL));
