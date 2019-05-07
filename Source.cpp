@@ -84,7 +84,7 @@ int main()
 	for (int i = 0; i < numberOfCourses; i++)
 	{
 		
-		cout << optimal[i].getCourseId() << " \t\t" << optimal[i].getInstructorId() << "\t\t" << optimal[i].getMatchScore() << endl;
+		cout << optimal[i].getCourseId() << " \t\t" << optimal[i].getInstructorId() << "\t\t" << optimal[i].getMatchScore() <<"%" <<endl;
 	}
 	system("pause");
 	return 0;
