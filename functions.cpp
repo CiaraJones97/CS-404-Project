@@ -87,8 +87,7 @@ void instructorInput(vector<instructor>& v)
 	}
 	void assign(vector<instructor> i, vector<Course> c, vector<Assignment> &a)
 	{
-		while (c.size() != 0)
-		{
+		
 			Assignment assi;
 			
 				if (c.size() != 0 && (c.back().getAlgo() + c.back().getHtml()) > (c.back().getArch() + c.back().getMath()))
@@ -224,7 +223,7 @@ void instructorInput(vector<instructor>& v)
 			}
 		}
 
-	}
+	
 	void CalculateMatchScore(instructor i, Course c, vector <Assignment> & a)
 
 	{
