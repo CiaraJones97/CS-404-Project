@@ -35,19 +35,32 @@ int main()
 	cout << "\t................... Percentage of course content............." << endl;
 	displayCourseInfo(courseInfo);
 
-	//couseid and course name
+	//couse id and course name
 	cout << endl;
 	cout << "\t............Course ID...........Course name......." << endl;
 	cout << endl;
 	for (int n = 0; n < numberOfCourses; n++) {
 		cout << "\t\t\t"<< courseInfo[n].getId() << "\t\tProblem solving and Programming  " << n + 1 << endl;
 	}
+	//Topic table topic id and course contents
+	vector<string> topic;
+	topic.push_back("Algorithm");
+	topic.push_back("Archetecture");
+	topic.push_back("Html");
+	topic.push_back("Math");
+	topic.push_back("Programming");
+	cout << endl;
+	cout << "\t............Topic ID...........Topic name......." << endl;
+	cout << endl;
+	for (int n = 0; n < 5; n++) {
+		cout << "\t\t\t" << n + 1 << "\t\t" << topic[n] << endl;
+	}
 	//instructor id and name
 	cout << endl;
 	cout << "\t...........Instructor ID.........Instructor name......." << endl;
 	cout << endl;
 	for (int n = 0; n < numberOfCourses; n++) {
-		cout << "\t\t\t" << instructorInfo[n].getId() << "\t\tInstructor  " << n + 1 << endl;
+		cout << "\t\t\t" << instructorInfo[n].getId() << "\t\Instructor Smith  " << n + 1 << endl;
 	}
 
 
